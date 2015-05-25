@@ -1,0 +1,40 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Snake Game</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Snake Game</h1>
+
+<canvas id="game" width="500" height="500">
+</canvas>
+<p id="level">Level: <span>1</span></p>
+<p class="help">Use the arrow keys to control the snake</p>
+
+<div class="overlay" id="game-over">
+    <h2>Game Over</h2>
+
+    <a href="#" class="overlay__restart">Try Again?</a>
+</div>
+
+</body>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+<script src="js/snake.js"></script>
+
+<script type="text/javascript">
+  snake.init();
+</script>
+
+</html>

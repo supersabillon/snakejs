@@ -1,0 +1,94 @@
+* {
+ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ margin: 0;
+ }
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html, body {
+  background-color: rgb(84, 148, 49);
+  color: rgb(26, 74, 0);
+  font-family: Arial;
+  font-size: 12px;
+}
+
+
+h1 {
+  text-align: center;
+  margin: 1em;
+  font-size: 3em;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+canvas {
+  border: 2px solid #000;
+  margin: 0 auto;
+  display: block;
+}
+
+#level {
+  text-align: center;
+  margin: 0.5em 0;
+  font-size: 2em;
+  vertical-align: top;
+}
+
+.help {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+a, a:link {
+  color: rgba(0,0,0,0.8);
+
+}
+
+a:hover {
+  color: rgba(0,0,0,0.3);
+}
+
+.overlay {
+  position: fixed;
+  outline: 9999px solid rgba(0, 0, 0, 0.8);
+  background: rgb(26, 74, 0);
+  width: 400px;
+  top: 45%;
+  left: 50%;
+  text-align: center;
+  margin: -80px 0 0 -200px;
+  padding: 35px 0;
+  z-index: 100;
+  color: #000;
+
+}
+
+.overlay p {
+  margin: 0 0 1em;
+  font-size: 1.255em;
+}
+
+.overlay__restart {
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+a.close-pop, a.close-pop:link {
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  font-size: 2em;
+  width: 10px;
+  text-decoration: none;
+}
+
+#game-over {
+  display: none;
+}
