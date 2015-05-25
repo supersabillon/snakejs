@@ -40,11 +40,6 @@ canvas {
   vertical-align: top;
 }
 
-.help {
-  text-align: center;
-  font-size: 1.3em;
-}
-
 a, a:link {
   color: rgba(0,0,0,0.8);
 
@@ -54,10 +49,27 @@ a:hover {
   color: rgba(0,0,0,0.3);
 }
 
+.start-game {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  width: 600px;
+  height: 535px;
+  margin-left: -300px;
+  top: 100px;
+  left: 50%;
+  text-align: center;
+  font-size: 2em;
+  padding-top: 13%;
+}
+
+.start-game p {
+  margin-bottom: 20px;
+}
+
 .overlay {
   position: fixed;
-  outline: 9999px solid rgba(0, 0, 0, 0.8);
-  background: rgb(26, 74, 0);
+  outline: 9999px solid rgba(0, 0, 0, 0.4);
+  background: rgb(255, 255, 255);
   width: 400px;
   top: 45%;
   left: 50%;
@@ -66,7 +78,13 @@ a:hover {
   padding: 35px 0;
   z-index: 100;
   color: #000;
+  text-transform: uppercase;
+}
 
+.overlay a {
+  font-size: 1.2em;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
 }
 
 .overlay p {
@@ -77,16 +95,6 @@ a:hover {
 .overlay__restart {
   margin-bottom: 12px;
   display: inline-block;
-}
-
-a.close-pop, a.close-pop:link {
-  display: block;
-  position: absolute;
-  right: 15px;
-  top: 5px;
-  font-size: 2em;
-  width: 10px;
-  text-decoration: none;
 }
 
 #game-over {

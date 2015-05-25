@@ -168,14 +168,18 @@ var snake = (function($, d){
 	//initialize event listeners
 	var _initEvents = function(){
 
-		$('.close-pop').on('click', function() {
-			$(this).parent().hide();
-		});
-
 		$('#game-over a').on('click', function() {
 			_start();
 			$(this).parent().hide();
 		});
+
+		$('#start').on('click', function(e){
+			_start();
+			e.preventDefault();
+			$(this).parent().hide();
+		});
+
+
 
 		$(d).keydown(function(e) {
 			switch(e.which) {
@@ -205,7 +209,6 @@ var snake = (function($, d){
 		w = gameCanvas.width;
 		h = gameCanvas.height;
 
-		_start();
 		_initEvents();
 	};
 
