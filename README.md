@@ -6,5 +6,5 @@ Libraries used: jQuery and underscore.js
 
 Control the snake using your arrow keys!
 
-## Play it here: 
-http://sabillon.net/p/snake
+## Play it here:
+http://sabillon.net/snakejs
